@@ -1,6 +1,6 @@
 import { Button } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
-import { UserLoggedContext } from '../../store/userLogged-context'
+import { UserLoggedContext } from '../../store/UserLoggedContext'
 import React, { useContext } from 'react';
 
 const Page1 : React.FC = () => {

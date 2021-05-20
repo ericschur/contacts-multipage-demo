@@ -3,9 +3,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { UserLoggedContext } from '../store/userLogged-context'
+import { UserLoggedContext } from '../store/UserLoggedContext';
 
-const  MainHeader = () => {
+const  MainHeader: React.FC = () => {
   const userLoggedCtx = useContext(UserLoggedContext);
   return (
     <Fragment>
@@ -13,7 +13,7 @@ const  MainHeader = () => {
         <AppBar>
           <Toolbar>
             <Typography variant="h6">
-            <span>El usuario {userLoggedCtx.userName} navego a distintas rutas {userLoggedCtx.interactionsWithPageRout.toString()} veces´</span> 
+            <span>El usuario {userLoggedCtx.userName} navego a distintas rutas {userLoggedCtx.interactionsWithPageRout.toString()} veces</span> 
             </Typography>
           </Toolbar>
         </AppBar>
